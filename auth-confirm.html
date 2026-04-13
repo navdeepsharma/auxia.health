@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email confirmed · Auxia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; min-height: 100vh; }
+    body {
+      font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(160deg, #1C3A2E, #2A5442);
+      color: #F7F3EE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #F7F3EE;
+      color: #1C3A2E;
+      border-radius: 24px;
+      padding: 48px 36px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .checkmark {
+      font-size: 64px;
+      color: #5BA890;
+      margin-bottom: 18px;
+      animation: scaleIn .6s ease;
+    }
+    @keyframes scaleIn { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 14px;
+      color: #1C3A2E;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.65;
+      color: #5C6E66;
+      margin-bottom: 14px;
+    }
+    .button {
+      display: inline-block;
+      background: #1C3A2E;
+      color: #F7F3EE;
+      text-decoration: none;
+      padding: 18px 36px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      margin-top: 24px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(28,58,46,0.25); }
+    .footer {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(28,58,46,0.1);
+      font-size: 13px;
+      color: #8a9590;
+    }
+    .logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: #1C3A2E;
+      margin-bottom: 28px;
+      letter-spacing: 0.03em;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">Auxia</div>
+    <div class="checkmark">✦</div>
+    <h1>Email confirmed</h1>
+    <p>Your account is verified and ready to go.</p>
+    <p>Tap below to open Auxia and sign in to start your first session.</p>
+    <a href="auxia://" class="button">Open Auxia →</a>
+    <div class="footer">
+      Brain Training, Guided by AI<br>
+      hello@auxia.health
+    </div>
+  </div>
+</body>
+</html>
